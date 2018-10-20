@@ -9,7 +9,7 @@
       <w>72</w>
       <h>144</h>
     </coordinates>
-    <panel_attributes>User
+    <panel_attributes>Actor
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -18,10 +18,10 @@
     <coordinates>
       <x>384</x>
       <y>180</y>
-      <w>240</w>
-      <h>108</h>
+      <w>252</w>
+      <h>132</h>
     </coordinates>
-    <panel_attributes>U4 guide mark for the iris
+    <panel_attributes>U5-Add guide mark for the iris
 on the screen while
 photographing</panel_attributes>
     <additional_attributes/>
@@ -34,7 +34,7 @@ photographing</panel_attributes>
       <w>240</w>
       <h>108</h>
     </coordinates>
-    <panel_attributes>U5 User enters age information</panel_attributes>
+    <panel_attributes>U6-Enter age information</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -45,20 +45,20 @@ photographing</panel_attributes>
       <w>216</w>
       <h>120</h>
     </coordinates>
-    <panel_attributes>U6-Press button
-send Data</panel_attributes>
+    <panel_attributes>U7-Press button
+to send data</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>612</x>
+      <x>624</x>
       <y>204</y>
-      <w>216</w>
+      <w>204</w>
       <h>60</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;</panel_attributes>
-    <additional_attributes>160.0;10.0;10.0;30.0</additional_attributes>
+    <additional_attributes>150.0;10.0;10.0;30.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -102,7 +102,7 @@ halign=left</panel_attributes>
       <w>156</w>
       <h>84</h>
     </coordinates>
-    <panel_attributes>Sent data
+    <panel_attributes>U8-Sent data
 to main controller</panel_attributes>
     <additional_attributes/>
   </element>
@@ -121,12 +121,12 @@ to main controller</panel_attributes>
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>804</x>
+      <x>792</x>
       <y>180</y>
-      <w>72</w>
+      <w>96</w>
       <h>144</h>
     </coordinates>
-    <panel_attributes>User
+    <panel_attributes>Controller
 </panel_attributes>
     <additional_attributes/>
   </element>

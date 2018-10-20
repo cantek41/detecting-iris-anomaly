@@ -21,7 +21,7 @@
       <h>126</h>
     </coordinates>
     <panel_attributes>U1-Press button 
-Take photo from barcode
+to take photo from barcode
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -33,7 +33,7 @@ Take photo from barcode
       <w>266</w>
       <h>112</h>
     </coordinates>
-    <panel_attributes>U2-press button take 
+    <panel_attributes>U3-Press button to take 
 photo from iris
 </panel_attributes>
     <additional_attributes/>
@@ -46,7 +46,7 @@ photo from iris
       <w>252</w>
       <h>140</h>
     </coordinates>
-    <panel_attributes>U3-display the camera 
+    <panel_attributes>U4-Display the camera 
 image in real time</panel_attributes>
     <additional_attributes/>
   </element>
@@ -114,7 +114,7 @@ halign=left</panel_attributes>
       <w>182</w>
       <h>98</h>
     </coordinates>
-    <panel_attributes>recognition 
+    <panel_attributes>U2-Recognize
 identity person</panel_attributes>
     <additional_attributes/>
   </element>

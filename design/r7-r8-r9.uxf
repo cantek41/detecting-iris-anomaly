@@ -2,30 +2,6 @@
 <diagram program="umlet" version="14.3.0">
   <zoom_level>14</zoom_level>
   <element>
-    <id>UMLActor</id>
-    <coordinates>
-      <x>98</x>
-      <y>224</y>
-      <w>84</w>
-      <h>154</h>
-    </coordinates>
-    <panel_attributes>Actor</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLUseCase</id>
-    <coordinates>
-      <x>378</x>
-      <y>126</y>
-      <w>420</w>
-      <h>196</h>
-    </coordinates>
-    <panel_attributes>U7-Connect main device to terminal devices 
-using wired or wireless technology
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
     <id>UMLUseCase</id>
     <coordinates>
       <x>364</x>
@@ -33,9 +9,21 @@ using wired or wireless technology
       <w>420</w>
       <h>196</h>
     </coordinates>
-    <panel_attributes>U8-process iris image from terminal devices
-and send back to these devices
+    <panel_attributes>U10-Clients connect main device 
 </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>378</x>
+      <y>154</y>
+      <w>420</w>
+      <h>154</h>
+    </coordinates>
+    <panel_attributes>U9-Send  processed data 
+to the clients
+they belong to</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -46,32 +34,21 @@ and send back to these devices
       <w>322</w>
       <h>196</h>
     </coordinates>
-    <panel_attributes>U9-Show the result of operation 
-rom main device 
-on terminal devices</panel_attributes>
+    <panel_attributes>U11-Show the result 
+comes from main device 
+on clients</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>168</x>
-      <y>252</y>
-      <w>238</w>
-      <h>42</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>150.0;10.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
       <x>700</x>
-      <y>714</y>
+      <y>532</y>
       <w>252</w>
-      <h>42</h>
+      <h>224</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;160.0;10.0</additional_attributes>
+    <additional_attributes>10.0;10.0;160.0;140.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
@@ -89,7 +66,7 @@ halign=left</panel_attributes>
     <id>UMLActor</id>
     <coordinates>
       <x>896</x>
-      <y>406</y>
+      <y>168</y>
       <w>140</w>
       <h>154</h>
     </coordinates>
@@ -100,7 +77,7 @@ halign=left</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>784</x>
-      <y>448</y>
+      <y>210</y>
       <w>168</w>
       <h>42</h>
     </coordinates>
@@ -117,5 +94,16 @@ halign=left</panel_attributes>
     </coordinates>
     <panel_attributes>Controller</panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>714</x>
+      <y>714</y>
+      <w>238</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;150.0;10.0</additional_attributes>
   </element>
 </diagram>
