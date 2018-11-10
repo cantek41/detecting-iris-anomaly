@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+
+<html lang="tr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+
+    <script type="text/javascript">
+        function loadHeader() {
+            var header = document.getElementById("HeaderContent");
+            header.innerHTML = '<iframe frameborder="no" width= "100% " height= "250" scrolling= "no" src= "../header/header.html" ></iframe > '
+        }
+    </script>
+</head>
+<body onload="loadHeader()">
+    <div id="HeaderContent"></div>
+    <div id="container">
+        <a name="menu"></a> <h2>Scenarios and Sequence Diagrams</h2>
+        <br>
+        <ul>
+            <li>
+                Use Case 1
+                <ul>
+                    <li><a href="#scenario1A">Scenario 1A</a></li>
+                    <li><a href="#scenario1B">Scenario 1B</a></li>
+                </ul>
+            </li>
+            <li>
+                Use Case 2
+                <ul>
+                    <li><a href="#scenario2A">Scenario 2A</a></li>
+                </ul>
+            </li>
+            <li>
+                Use Case 3
+                <ul>
+                    <li><a href="#scenario3A">Scenario 3A</a></li>
+                    <li><a href="#scenario3B">Scenario 3B</a></li>
+                </ul>
+            </li>
+            <li>
+                Use Case 4
+                <ul>
+                    <li><a href="#scenario4A">Scenario 4A</a></li>
+                </ul>
+            </li>
+
+            <li>Use Case 5</li>
+            <li>Use Case 6</li>
+            <li>Use Case 7</li>
+            <li>Use Case 8</li>
+            <li>
+                Use Case 9
+                <ul>
+                    <li><a href="#scenario9A">Scenario 9A</a></li>
+                </ul>
+            </li>
+            <li>
+                Use Case 10
+                <ul>
+                    <li><a href="#scenario10A">Scenario 10A</a></li>
+                </ul>
+            </li>
+            <li>
+                Use Case 11
+                <ul>
+                    <li><a href="#scenario11A">Scenario 11A</a></li>
+                </ul>
+            </li>
+
+        </ul>
+        <hr />
+        <!-- senaryolar -->
+        <div>
+            <!-- Use Case 1 -->
+            <h2>Use Case 1: Press button to take photo from barcode</h2>
+            <a name="scenario1A">
+                <h3>Scenario 1A: Actor takes photo of barcode by pressing the button</h3>
+                <h4>Pre-Conditions:</h4> Barcode reading mode is opened.
+                <h4>Scenario:</h4> Press button and read barcode
+                <h4>Post-Conditions:</h4> Person is recognized
+                <h4>Sequence Diagram:</h4>
+                <img src="Scenario_Bmp/Scenerio 1A.bmp" alt="Scenerio" />
+            </a>
+            <a href="#menu">go to menu </a>          
+
+            <a name="scenario1B">
+                <h3>Scenario 1B: Barcode image is not good</h3>
+                <h4>Pre-Conditions:</h4> Press button and take photo from borcode but the photo is not good.
+                <h4>Scenario:</h4> Press button and read barcode
+                <h4>Post-Conditions:</h4> Message: Barcode image is not good.
+                <h4>Sequence Diagram:</h4>
+                <img src="Scenario_Bmp/Scenerio 1B.bmp" alt="Scenerio" />
+            </a>         
+
+           
+            <a href="#menu">go to menu </a>
+
+            <!--Use Case 2: Recognize identity person  -->
+            <h2>Use Case 2: Recognize identity person</h2>
+            <a name="scenario2A">
+                <h3>Scenario 2A: Recognize person</h3>
+                <h4>Pre-Conditions:</h4> Barcode is ready
+                <h4>Scenario:</h4> Recognize  person from barcode
+                <h4>Post-Conditions:</h4> Recognized person
+                <h4>Sequence Diagram:</h4>
+                <img src="Scenario_Bmp/Scenerio 2A.bmp" alt="Scenerio" />
+            </a>
+            <a href="#menu">go to menu </a>
+
+            <!--Use Case 3: Press button to take photo from iris  -->
+            <h2>Use Case 3: Press button to take photo from iris</h2>
+            <a name="scenario3A">
+                <h3>Scenario 3A: Iris mode is opened</h3>
+                <h4>Pre-Conditions:</h4> Press button and take photo from iris
+                <h4>Scenario:</h4> Recognize  person
+                <h4>Post-Conditions:</h4> The photo of iris is taken from camera
+                <h4>Sequence Diagram:</h4>
+                <img src="Scenario_Bmp/Scenerio 3A.bmp" alt="Scenerio" />
+            </a>
+            <a href="#menu">go to menu </a>
+
+            <a name="scenario3B">
+                <h3>Scenario 3B: Actor takes photo of iris by pressing the button but iris photo is not used</h3>
+                <h4>Pre-Conditions:</h4> Iris mode is opened
+                <h4>Scenario:</h4>Press button and take phot from iris
+                <h4>Post-Conditions:</h4>The photo of iris is not official
+                <h4>Sequence Diagram:</h4>
+                <img src="Scenario_Bmp/Scenerio 3B.bmp" alt="Scenerio" />
+            </a>
+            <a href="#menu">go to menu </a>
+
+            <!--Use Case 4: Display the camera image in real time  -->
+            <h2>Use Case 4: Display the camera image in real time</h2>
+            <a name="scenario4A">
+                <h3>Scenario 4A:Display the image comes from camera up to 5 ms</h3>
+                <h4>Pre-Conditions:</h4> Iris or Barcode mode
+                <h4>Scenario:</h4> Display the image comes from camera up to 5 ms
+                <h4>Post-Conditions:</h4>Image is ready
+                <h4>Sequence Diagram:</h4>
+                <img src="Scenario_Bmp/Scenerio 4A.bmp" alt="Scenerio" />
+            </a>
+            <a href="#menu">go to menu </a>
+
+            <!--Use Case 5: Add guide mark for the iris on the screen while photographing  -->
+            <h2>Use Case 5: Add guide mark for the iris on the screen while photographing</h2>
+            <a name="scenario5A">
+                <h3>Scenario 5A:Add guide mark for the iris on the screen while photographing</h3>
+                <h4>Pre-Conditions:</h4> Iris mode opened
+                <h4>Scenario:</h4> Draw circle guide to screen
+                <h4>Post-Conditions:</h4>--
+                <h4>Sequence Diagram:</h4>
+                <img src="Scenario_Bmp/Scenerio 5A.bmp" alt="Scenerio" />
+            </a>
+            <a href="#menu">go to menu </a>
+
+            <!--Use Case 6: Not Used  -->
+            <h2>Use Case 6: Enter age information (not used marge to UseCase1)</h2>
+
+
+            <!--Use Case 7: Press button to send data  -->
+            <h2>Use Case 7: Press button to send data</h2>
+            <a name="scenario7A">
+                <h3>Scenario 7A: pack data and send to server</h3>
+                <h4>Pre-Conditions:</h4> image of iris is already
+                <h4>Scenario:</h4> packaging of data and sending
+                <h4>Post-Conditions:</h4> getting success message
+                <h4>Sequence Diagram:</h4>
+                <img src="Scenario_Bmp/Scenerio 7A.bmp" alt="Scenerio" />
+            </a>
+            <a href="#menu">go to menu </a>
+            <a name="scenario7B">
+                <h3>Scenario 7B: Give alert in timeout</h3>
+                <h4>Pre-Conditions:</h4> Barcode or iris mode
+                <h4>Scenario:</h4> Go to main screen if button is not pressed during  10 sc
+                <h4>Post-Conditions:</h4>Device back to main screen
+                <h4>Sequence Diagram:</h4>
+                <img src="Scenario_Bmp/Scenerio 7B.bmp" alt="Scenerio" />
+            </a>
+            <a href="#menu">go to menu </a>
+            <!--Use Case 8: Send data to main controller  -->
+            <h2>Use Case 8: Send data to main controller</h2>
+            <!--<a name="scenario8A">
+                <h3>Scenario 8A: Give alert in timeout</h3>
+                <h4>Pre-Conditions:</h4> Barcode or iris mode
+                <h4>Scenario:</h4> Go to main screen if button is not pressed during  10 sc
+                <h4>Post-Conditions:</h4>Device back to main screen
+                <h4>Sequence Diagram:</h4>
+                <img src="Scenario_Bmp/Scenerio 8A.bmp" alt="Scenerio" />
+            </a>-->
+            <a href="#menu">go to menu </a>
+
+
+
+            <h2>Use Case 9: Send processed data to the clinets they belong to</h2>
+            <a name="scenario9A">
+                <h3>Scenario 9A: Process data from a clinet and send it back</h3>
+                <h4>Pre-Conditions:</h4> Data comes from client
+                <h4>Scenario:</h4> Process data
+                <h4>Post-Conditions:</h4> Send result to client
+                <h4>Sequence Diagram:</h4>
+                <img src="sequence9.jpg" alt="sequance09.jpg" />
+            </a>
+            <a href="#menu">go to menu </a>
+
+            <h2>Use Case 10: Clients connect main device</h2>
+            <a name="scenario10A">
+                <h3>Scenario 10A: Connect verify with main device</h3>
+                <h4>Pre-Conditions:</h4> Physical connected
+                <h4>Scenario:</h4> Credentials control
+                <h4>Post-Conditions:</h4> Send result (token or error masage)
+                <h4>Sequence Diagram:</h4>
+                <img src="sequence10.jpg" alt="sequance10.jpg" />
+            </a>
+            <a href="#menu">go to menu </a>
+            <h2>Use Case 11: Show the result comes from main device on clients</h2>
+            <a name="scenario11A">
+                <h3>Scenario 11A: Display data from the server on the screen</h3>
+                <h4>Pre-Conditions:</h4> Result comes from server
+                <h4>Scenario:</h4> Read data from a server
+                <h4>Post-Conditions:</h4> Show on screen
+                <h4>Sequence Diagram:</h4>
+                <img src="sequence11.jpg" alt="sequance11.jpg" />
+            </a>
+        </div>
+
+    </div>
+</body>
+</html>
