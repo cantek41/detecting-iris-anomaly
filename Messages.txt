@@ -1,0 +1,55 @@
+Physical State Sensors
+
+Button(v): Soda selection button.       
+v={True, False}.
+One button per type of soda.  All are False at initialization.  S is an integer 1..8
+Button[s](True) is sent when button s is depressed; Button[s](False) is sent when button s is released.
+The button sensors have a physical interlock that prevents more than one being pressed at a time.
+
+
+
+CameraCapture:  indicates the location of the VC.
+take foto
+
+CameraVideo(v):
+v={True, False}.
+CameraVideo(true): start capture camera
+CameraVideo(false): stop capture camera
+
+
+System Actuators
+
+Display(data)
+data = görüntülenecek bilgi
+
+Control System Objects
+Client Control System
+DsiplayControl
+Barcode Control
+İrisControl
+ButonControl
+CameraControl
+
+Controller Messages
+
+Source Node Name  Message Name		Description
+CameraControl	  mCameraCapture   	capture photo from camera
+ButtonControl	  mButton		when button click
+CCS		  mMode			Barcode or Iris Mode
+CCS		  mCheckBarcode		Cheking Barcode return T/F
+CCS		  mShow			Show some data on display
+CCS		  mCheckIdendtity	Recognize person from bacode return Person Detail
+CCS		  mCheckIris		Checing iris image retun T/F
+CSS		  mShowCamera(mode)	Mode is Barcode, show only cameraCapture. Mode is iris, show cameraCApture with Guid
+CSS		  mSendData		Data to IDS
+CSS		  mlogin		get user token from IDS
+
+IDS		  mResult		retun result to client
+
+	
+
+
+
+
+	
+

@@ -1,13 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<diagram program="umlet" version="14.3.0">
-  <zoom_level>10</zoom_level>
+<?xml version="1.0" encoding="UTF-8"?><diagram program="umlet" version="13.3">
+  <zoom_level>6</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>0</x>
-      <y>190</y>
-      <w>70</w>
-      <h>50</h>
+      <x>24</x>
+      <y>102</y>
+      <w>42</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>Actor
 fg=blue
@@ -17,10 +16,10 @@ fg=blue
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>120</x>
-      <y>190</y>
-      <w>70</w>
-      <h>50</h>
+      <x>96</x>
+      <y>102</y>
+      <w>42</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>Button
 fg=blue
@@ -30,32 +29,35 @@ fg=blue
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>20</x>
-      <y>230</y>
-      <w>30</w>
-      <h>330</h>
+      <x>36</x>
+      <y>126</y>
+      <w>18</w>
+      <h>276</h>
     </coordinates>
-    <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;310.0;10.0;10.0</additional_attributes>
+    <panel_attributes>lt=.
+fg=blue</panel_attributes>
+    <additional_attributes>10.0;440.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>140</x>
-      <y>230</y>
-      <w>30</w>
-      <h>330</h>
+      <x>108</x>
+      <y>126</y>
+      <w>18</w>
+      <h>270</h>
     </coordinates>
-    <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;310.0;10.0;10.0</additional_attributes>
+    <panel_attributes>lt=.
+fg=blue
+</panel_attributes>
+    <additional_attributes>10.0;430.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>250</x>
-      <y>190</y>
-      <w>120</w>
-      <h>50</h>
+      <x>174</x>
+      <y>102</y>
+      <w>72</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>Button Control
 </panel_attributes>
@@ -64,69 +66,155 @@ fg=blue
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>250</x>
-      <y>380</y>
-      <w>120</w>
+      <x>276</x>
+      <y>150</y>
+      <w>72</w>
       <h>30</h>
     </coordinates>
-    <panel_attributes>PRE:False</panel_attributes>
+    <panel_attributes>Barcode reading
+mode is opened.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>384</x>
+      <y>102</y>
+      <w>72</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Camera Control
+</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>300</x>
-      <y>240</y>
-      <w>30</w>
-      <h>160</h>
+      <x>306</x>
+      <y>126</y>
+      <w>18</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;140.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>300</x>
-      <y>330</y>
-      <w>30</w>
-      <h>230</h>
+      <x>204</x>
+      <y>126</y>
+      <w>18</w>
+      <h>276</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;210.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;440.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>20</x>
-      <y>280</y>
-      <w>150</w>
-      <h>40</h>
+      <x>36</x>
+      <y>156</y>
+      <w>90</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-
-1a. press button
+press
 fg=blue</panel_attributes>
     <additional_attributes>130.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>140</x>
-      <y>410</y>
-      <w>190</w>
-      <h>40</h>
+      <x>108</x>
+      <y>174</y>
+      <w>114</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-
-1c. PressButton(false)
+Button(true)
 fg=blue</panel_attributes>
     <additional_attributes>170.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>420</x>
+      <y>126</y>
+      <w>18</w>
+      <h>282</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;450.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>204</x>
+      <y>186</y>
+      <w>120</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+mButton</panel_attributes>
+    <additional_attributes>180.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>460</x>
-      <y>190</y>
-      <w>120</w>
-      <h>50</h>
+      <x>498</x>
+      <y>102</y>
+      <w>72</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Camera
+fg=blue
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>522</x>
+      <y>126</y>
+      <w>18</w>
+      <h>288</h>
+    </coordinates>
+    <panel_attributes>lt=.
+fg=blue</panel_attributes>
+    <additional_attributes>10.0;460.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>306</x>
+      <y>204</y>
+      <w>126</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+mTakeImage</panel_attributes>
+    <additional_attributes>190.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>426</x>
+      <y>216</y>
+      <w>114</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+Camera(true)
+fg=blue</panel_attributes>
+    <additional_attributes>10.0;20.0;170.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>666</x>
+      <y>102</y>
+      <w>72</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>Display Control
 </panel_attributes>
@@ -135,21 +223,34 @@ fg=blue</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>510</x>
-      <y>230</y>
-      <w>30</w>
-      <h>330</h>
+      <x>306</x>
+      <y>258</y>
+      <w>318</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+mCheckBarcode
+</panel_attributes>
+    <additional_attributes>510.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>696</x>
+      <y>126</y>
+      <w>18</w>
+      <h>300</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;310.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;480.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>680</x>
-      <y>190</y>
-      <w>120</w>
-      <h>50</h>
+      <x>762</x>
+      <y>102</y>
+      <w>72</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>Display
 fg=blue
@@ -159,38 +260,147 @@ fg=blue
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>300</x>
-      <y>450</y>
-      <w>240</w>
-      <h>50</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;-
-1d.
-</panel_attributes>
-    <additional_attributes>220.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>730</x>
-      <y>230</y>
-      <w>30</w>
-      <h>330</h>
+      <x>792</x>
+      <y>126</y>
+      <w>18</w>
+      <h>294</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;310.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;470.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>510</x>
-      <y>340</y>
-      <w>240</w>
-      <h>50</h>
+      <x>306</x>
+      <y>228</y>
+      <w>126</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-
-1e. Mesage (press to button)
 </panel_attributes>
-    <additional_attributes>220.0;20.0;10.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;190.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>582</x>
+      <y>102</y>
+      <w>72</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Barcode Control</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>612</x>
+      <y>126</y>
+      <w>18</w>
+      <h>294</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;470.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>276</x>
+      <y>102</y>
+      <w>72</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Client Control
+System
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>306</x>
+      <y>174</y>
+      <w>18</w>
+      <h>234</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;370.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>306</x>
+      <y>282</y>
+      <w>318</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+false
+</panel_attributes>
+    <additional_attributes>10.0;20.0;510.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>222</x>
+      <y>162</y>
+      <w>102</w>
+      <h>192</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+	image
+	is not
+	usable
+</panel_attributes>
+    <additional_attributes>90.0;10.0;10.0;10.0;10.0;300.0;150.0;300.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>420</x>
+      <y>210</y>
+      <w>12</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>612</x>
+      <y>264</y>
+      <w>12</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>306</x>
+      <y>300</y>
+      <w>408</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+	mShow
+</panel_attributes>
+    <additional_attributes>660.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>696</x>
+      <y>318</y>
+      <w>114</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+Display(data)
+fg=blue
+</panel_attributes>
+    <additional_attributes>170.0;20.0;10.0;20.0</additional_attributes>
   </element>
 </diagram>

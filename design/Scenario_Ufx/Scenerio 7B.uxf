@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<diagram program="umlet" version="14.3.0">
+<?xml version="1.0" encoding="UTF-8"?><diagram program="umlet" version="13.3">
   <zoom_level>11</zoom_level>
   <element>
     <id>UMLClass</id>
@@ -60,7 +59,7 @@ fg=blue
       <w>132</w>
       <h>55</h>
     </coordinates>
-    <panel_attributes>Button Control
+    <panel_attributes>ButtonControl
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -97,32 +96,6 @@ mode is ready</panel_attributes>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;440.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>55</x>
-      <y>143</y>
-      <w>165</w>
-      <h>44</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;-
-press button
-fg=blue</panel_attributes>
-    <additional_attributes>130.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>187</x>
-      <y>176</y>
-      <w>209</w>
-      <h>44</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;-
-PressButton(true)
-fg=blue</panel_attributes>
-    <additional_attributes>170.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -177,11 +150,37 @@ to press button
     <coordinates>
       <x>550</x>
       <y>110</y>
-      <w>264</w>
+      <w>275</w>
       <h>341</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-
 Timeout</panel_attributes>
-    <additional_attributes>10.0;10.0;170.0;10.0;170.0;290.0;20.0;290.0</additional_attributes>
+    <additional_attributes>10.0;10.0;170.0;10.0;170.0;290.0;10.0;290.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>55</x>
+      <y>154</y>
+      <w>165</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+press
+fg=blue</panel_attributes>
+    <additional_attributes>130.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>187</x>
+      <y>187</y>
+      <w>209</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+Button(true)
+fg=blue</panel_attributes>
+    <additional_attributes>170.0;20.0;10.0;20.0</additional_attributes>
   </element>
 </diagram>

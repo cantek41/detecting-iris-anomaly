@@ -43,8 +43,160 @@
                 R9.	Result of the process shall be displayed on to the device terminals.
             </li>
         </ol>
-        
-        
+        <h2>Message and Notation</h2>
+        <br>    
+        <br>    
+
+       <h3>Physical State Sensors</h3> 
+        <p>
+           <b>Button(v)</b> : take picture button 
+            <br>    
+            v={True, False}.
+            <br> 
+            Button(True) is sent when button s is depressed; Button(False) is sent when button s is released.
+            The button sensors have a physical interlock that prevents more than one being pressed at a time.
+        </p>
+        <p>
+            <b>Camera(v)</b> : take image and video
+             <br>    
+             v={True, False}.
+             <br> 
+             Camera(true) is take video or picture
+             
+        </p>
+
+        <br>    
+        <br>    
+
+        <h3>Smart Sensors</h3> 
+        <p>
+            <b>CameraCapture</b> take photo from camera
+            <br>  
+           
+        </p>
+
+        <p>
+            <b>CameraVideo(v)</b> : take video
+            <br>    
+            v={True, False}.
+            <br> 
+            CameraVideo(true): start capture camera
+            CameraVideo(false): stop capture camera
+          
+        </p>
+        <br>    
+        <br>    
+
+        <h3>System Actuators</h3> 
+
+        <p>
+            <b>Display(data)</b> :
+            <br>    
+            data = görüntülenecek bilgi
+        </p>
+        <br>    
+        <br>    
+
+
+        <h3>Control System Objects</h3> 
+
+        <ol>
+            <li> Iris Detection System (IDS)</li>
+            <li> Client Control System (CCS)</li>
+            <li> DisplayControl</li>
+            <li> Barcode Control</li>
+            <li> Iris Control</li>
+            <li> ButonControl</li>
+            <li> CameraControl</li>         
+        </ol>  
+        <style>
+        .title {
+            font-weight: bold;
+        }
+        </style>
+
+<br>    
+<br>    
+            <br>    
+
+        <h3>Controller Messages</h3>    
+        <table border="1">
+            <tr class="title">
+                <td>Source Node Name</td>
+                <td>Message Name</td>
+                <td>Description</td>
+            </tr>
+            <tr>
+                    <td>CameraControl</td>
+                    <td>mCameraCapture</td>
+                    <td>capture photo from camera</td>
+                </tr>
+            <tr>
+                <td>ButtonControl</td>
+                <td>mButton</td>
+                <td>when button click</td>
+            </tr>
+            <tr>
+                    <td>CCS</td>
+                    <td>mTakeImage</td>
+                    <td>Taking image from Camera</td>
+            </tr>
+            <tr>
+                    <td>CCS</td>
+                    <td>mMode</td>
+                    <td>Barcode or Iris Mode</td>
+            </tr>
+            <tr>
+                    <td>CCS</td>
+                    <td>mCheckBarcode</td>
+                    <td>Cheking Barcode return T/F</td>
+            </tr>
+            <tr>
+                    <td>CCS</td>
+                    <td>mShow</td>
+                    <td>Show some data on display</td>
+            </tr> 
+            <tr>
+                    <td>CCS</td>
+                    <td>mCheckIdendtity</td>
+                    <td>Recognize person from bacode return Person Detail</td>
+            </tr>
+            <tr>
+                    <td>CCS</td>
+                    <td>mCheckIris</td>
+                    <td>Checing iris image retun T/F</td>
+            </tr>
+            <tr>
+                    <td>CSS</td>
+                    <td>mShowCamera(mode)</td>
+                    <td>Mode is Barcode, show only cameraCapture. 
+                        Mode is iris, show cameraCapture with Guid</td>
+            </tr>
+            <tr>
+                    <td>CSS</td>
+                    <td>mSendData</td>
+                    <td>Data to IDS</td>
+            </tr>
+             <tr>
+                    <td>CSS</td>
+                    <td>mlogin</td>
+                    <td>get user token from IDS</td>
+            </tr> <tr>
+                    <td>IDS</td>
+                    <td>mResult</td>
+                    <td>retun result to client</td>
+            </tr>
+        </table>
+
+  			
+		  	
+		  		
+		  	
+		  		
+		  		
+
+		  		
+
         <br>
         <br>
     </div>
