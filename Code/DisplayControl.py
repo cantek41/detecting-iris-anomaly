@@ -22,7 +22,7 @@ class DisplayControl():
         self.outputPath="image"
 
 
-        self.event=threading.Thread(target = self.showCamera, args = ())
+       
         self.stopEvent = threading.Event()
         self.text = tki.StringVar()
         self.statusText = tki.Label(self.form, textvariable = self.text)
@@ -38,8 +38,12 @@ class DisplayControl():
 
     def runCamera(self,vs):
         self.vs=vs
+        self.event=threading.Thread(target = self.showCamera, args = ())
         self.event.start()
         
+    def stopViewer(self):
+        self.stopEvent.set()
+        self.stopEvent = threading.Event()
 
 
     def showCamera(self):                
