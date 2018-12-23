@@ -7,7 +7,7 @@ import argparse
 import numpy as np
 import tensorflow as tf
 
-model_file ="output_graph.pb"
+model_file ="/home/pi/Desktop/iris/output_graph.pb"
 label_file = "output_labels.txt"
 input_height = 299
 input_width = 299
