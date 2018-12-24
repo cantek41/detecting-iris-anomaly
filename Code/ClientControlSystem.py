@@ -25,10 +25,10 @@ class CCS:
     def __init__(self):
         self.barcodeControl=BarcodeControl()
         self.cameraControl=CameraControl()        
-        self.buttonControl=ButtonControl(self)
+        self.buttonControl=ButtonControl()
         self.displayControl=DisplayControl()
         self.mMode = SystemMode.READY
-        self.ButtonControl()
+        self.mButton()
         self.timeover=10
         self.startTime=None
         self.currentTime=None
@@ -97,13 +97,13 @@ class CCS:
         if res:
             self.cameraControl.vs.stop()
             self.mMode = SystemMode.BUSSY
-            self.Bussy(self,image)
+            self.Bussy(image)
         else:
             self.mShow("Image No Good \n READ --> IRIS")              
 
     def Bussy(self,image):
         self.mShow("SENDING DATA \n TO SERVER")                    
-        result=mSendData("image/"+image)
+        result=self.mSendData("image/"+image)
         result="RESULT:\n"+result
         self.mShow(result)
         self.mMode = SystemMode.RESET
