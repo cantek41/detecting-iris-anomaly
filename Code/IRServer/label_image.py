@@ -89,8 +89,8 @@ def classify(name):
 
   top_k = results.argsort()[-5:][::-1]
   labels = load_labels(label_file)
-  res=""
+  res={}
   for i in top_k:
     print(labels[i], results[i])
-    res+=str(labels[i]) +" "+ str(results[i])+"\n"
+    res[labels[i]]=str(results[i])
   return res
