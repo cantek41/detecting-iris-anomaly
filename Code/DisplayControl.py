@@ -18,6 +18,7 @@ class DisplayControl():
 
         self.form = tki.Tk()
         self.form.geometry("240x320")
+        self.form.title('IDS')
         self.panel = None
         self.outputPath="image"
 

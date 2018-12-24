@@ -29,11 +29,13 @@ class CCS:
         self.displayControl=DisplayControl()
         self.mMode = SystemMode.READY
         self.mButton()
-        self.timeover=10
+        self.timeover=15
         self.startTime=None
         self.currentTime=None
+        self.mLogin()
 
     def mLogin(self):
+        self.token=ApiClient.sendRequest("login")
         return True
 
     def mCheckBarcode(self,image):        
@@ -80,16 +82,17 @@ class CCS:
          
     def Barcode(self):
         image=self.mTakeImage()
-        info=self.mCheckBarcode(image)                    
+        print(image)
+        info=self.mCheckBarcode(image)
         if not info:
             self.mShow("READ --> BARCODE\nBarkode image is not Good!")
         else:
             info = info.decode("utf-8")
             self.mShow(info+"\nREAD --> IRIS")
             print(info)
-            self.mMode = SystemMode.IRIS        
+            self.mMode = SystemMode.IRIS
         self.mButton()
-        
+
     def Iris(self):
         iris=IrisControl()
         image=self.mTakeImage()
@@ -99,13 +102,16 @@ class CCS:
             self.mMode = SystemMode.BUSSY
             self.Bussy(image)
         else:
-            self.mShow("Image No Good \n READ --> IRIS")              
+            self.mShow("Image No Good \n READ --> IRIS")
+            self.mButton()
+	    
 
     def Bussy(self,image):
-        self.mShow("SENDING DATA \n TO SERVER")                    
+        self.mShow("SENDING DATA \n TO SERVER")
         result=self.mSendData("image/"+image)
         result="RESULT:\n"+result
         self.mShow(result)
+        self.startTime=time.time()
         self.mMode = SystemMode.RESET
         self.mButton()
         
