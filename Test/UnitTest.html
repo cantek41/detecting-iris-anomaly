@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+
+<html lang="tr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+
+    <script type="text/javascript">
+        function loadHeader() {
+            var header = document.getElementById("HeaderContent");
+            header.innerHTML = '<iframe frameborder="no" width= "100% " height= "250" scrolling= "no" src= "../header/header.html" ></iframe > '
+        }
+    </script>
+    <style>
+        .title {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body onload="loadHeader()">
+    <div id="HeaderContent"></div>
+    <div id="container">
+        <h2>Unit Test</h2>
+        <br>
+        <h3>BarcodeController</h3>
+        <table border="1">
+            <tr class="title">
+                <td>Class</td>
+                <td>Control</td>
+                <td>Comparison</td>
+                <td>Value</td>
+                <td>Expected Value</td>
+                <td>Time</td>
+                <td>Status</td>
+            </tr>
+            <tr>
+                <td><a href="../Code/TestBarcodeControl.py">TestBarcodeControl</a></td>
+                <td>CheckBarcode</td>
+                <td>assertEqual</td>
+                <td>Name:Cantekin;Age:35</td>
+                <td>Name:Cantekin;Age:35</td>
+                <td>0.032s</td>
+                <td>Passed</td>
+            </tr>
+        </table>
+
+        <br>
+
+        <h3>ApiClient</h3>
+        <table border="1">
+            <tr class="title">
+                <td>Class</td>
+                <td>Control</td>
+                <td>Comparison</td>
+                <td>Value</td>
+                <td>Expected Value</td>
+                <td>Time</td>
+                <td>Status</td>
+            </tr>
+            <tr>
+                <td><a href="../Code/TestApiClient.py">TestApiClient</a></td>
+                <td>sendRequest</td>
+                <td>assertEqual</td>
+                <td>e8b24934679afcb5bf2706163c0cb2fa</td>
+                <td>e8b24934679afcb5bf2706163c0cb2fa</td>
+                <td>0.021s</td>
+                <td>Passed</td>
+            </tr>
+            <tr>
+                <td><a href="../Code/TestApiClient.py">TestApiClient</a></td>
+                <td>sendFile</td>
+                <td>assertIn</td>
+                <td>hasta</td>
+                <td>b'{\n  "hasta": "0.000109082", \n  "saglikli": "0.999891"\n}\n'</td>
+                <td>17.334s</td>
+                <td>Passed</td>
+            </tr>
+        </table>
+
+        <h3>IrisControl        </h3>
+        <table border="1">
+            <tr class="title">
+                <td>Class</td>
+                <td>Control</td>
+                <td>Comparison</td>
+                <td>Value</td>
+                <td>Expected Value</td>
+                <td>Time</td>
+                <td>Status</td>
+            </tr>
+            <tr>
+                <td><a href="../Code/TestIrisControl.py">TestIrisControl</a></td>
+                <td>CheckIris</td>
+                <td>assertTrue</td>
+                <td>True</td>
+                <td>True</td>
+                <td>1.031s</td>
+                <td>Passed</td>
+            </tr>
+        </table>
+
+        <br>
+
+        <h2>Unit Test Peer Review Status</h2>
+        <table border="1">
+            <tr class="title">
+                <td>Controller Name</td>
+                <td>Is each statechart arc exercised?</td>
+                <td>Is each statechart state exercised?</td>
+                <td>If there are multiple OR branches in an ard, are they exercised?</td>
+                <td>Are all the inputs and outputs mentioned in the behavioral requirements exercised?</td>
+            </tr>
+            <tr>
+                <td>ButonControl</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>No(R4-not neccesary, it is automatically detect)</td>
+            </tr>
+            <tr>
+                <td>CameraControl</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>yes</td>
+            </tr>
+            <tr>
+                <td>DisplayControl</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>yes</td>
+            </tr>
+            <tr>
+                <td>BarcodeControl</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>yes</td>
+            </tr>
+            <tr>
+                <td>IrisControl</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>yes</td>
+            </tr>
+        </table>
+
+    </div>
+</body>
+</html>

@@ -10,7 +10,7 @@ import datetime
 
 class DisplayControl():
     
-    def __init__(self):
+    def __init__(self): #S3.1
         self.frame = None
         self.thread = None
         self.event = None
@@ -33,11 +33,11 @@ class DisplayControl():
         
         
 
-    def showMessage(self,msg):
+    def showMessage(self,msg):#S3.3
         self.text.set(msg)
         print(msg)
 
-    def runVideo(self,vs):
+    def runVideo(self,vs):  #T3.1
         self.vs=vs
         self.event=threading.Thread(target = self.showCamera, args = ())
         self.event.start()

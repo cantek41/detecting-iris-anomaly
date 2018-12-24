@@ -25,9 +25,9 @@ class ButtonControl:
             self.event.start()
        
 
-    def mButton(self):
+    def mButton(self): #S1.1
         while not self.stopEvent.is_set():
-            btnRead = GPIO.input(16)
+            btnRead = GPIO.input(16) #T1.1
             #print("Btn Bası")
             if btnRead == False:
                 print("Btn Basıldı")                

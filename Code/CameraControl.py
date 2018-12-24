@@ -4,10 +4,10 @@ import time
 class CameraControl():
     
     def __init__(self):
-        self.vs=None
+        self.vs=None #S2.1
     
     
-    def mCamera(self):
+    def mCamera(self): #T2.1
         if not self.vs:
             self.vs=VideoStream(usePiCamera = 1).start()
             time.sleep(1.0)

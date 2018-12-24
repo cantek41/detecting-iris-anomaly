@@ -38,17 +38,17 @@ class CCS:
         self.token=ApiClient.sendRequest("login")
         return True
 
-    def mCheckBarcode(self,image):        
+    def mCheckBarcode(self,image):     #4.1   
         return  self.barcodeControl.CheckBarcode(image)
 
-    def mShow(self,message):
-        self.displayControl.showMessage(message)
+    def mShow(self,message): #T3.2
+        self.displayControl.showMessage(message)#S3.2
 
-    def mShowCamera(self):        
+    def mShowCamera(self): #S2.3       
         vs=self.cameraControl.mCamera()
         self.displayControl.runVideo(vs)
 
-    def mTakeImage(self):
+    def mTakeImage(self): #T2.2
         return self.displayControl.getImage()
 
     def mButton(self):        
@@ -66,7 +66,7 @@ class CCS:
             print("time",t)
             self.IDLE()
             
-    def IDLE(self):
+    def IDLE(self): #S1.3
         self.mShow("For Start Press Button")
         self.mMode = SystemMode.READY
         self.startTime=time.time()
@@ -74,16 +74,16 @@ class CCS:
             self.cameraControl.vs.stop()
         self.mButton()
 
-    def Ready(self):
+    def Ready(self): #S1.4
          self.mShow("READ --> BARCODE")
          self.mMode = SystemMode.BARCODE
          self.mShowCamera()
          self.mButton()
          
-    def Barcode(self):
+    def Barcode(self): #S1.5
         image=self.mTakeImage()
         print(image)
-        info=self.mCheckBarcode(image)
+        info=self.mCheckBarcode(image) #T.41
         if not info:
             self.mShow("READ --> BARCODE\nBarkode image is not Good!")
         else:
@@ -93,10 +93,10 @@ class CCS:
             self.mMode = SystemMode.IRIS
         self.mButton()
 
-    def Iris(self):
-        iris=IrisControl()
+    def Iris(self): #S1.6
+        iris=IrisControl() 
         image=self.mTakeImage()
-        res=iris.CheckIris("image/"+image)
+        res=iris.CheckIris("image/"+image) #T5.1
         if res:
             self.cameraControl.vs.stop()
             self.mMode = SystemMode.BUSSY
@@ -106,7 +106,7 @@ class CCS:
             self.mButton()
 	    
 
-    def Bussy(self,image):
+    def Bussy(self,image): #S1.7
         self.mShow("SENDING DATA \n TO SERVER")
         result=self.mSendData("image/"+image)
         result="RESULT:\n"+result
@@ -124,20 +124,20 @@ class CCS:
             self.checkTime()            
             while self.buttonControl.stopEvent.is_set():
                 self.startTime=time.time()
-                if self.mMode == SystemMode.READY:                                       
+                if self.mMode == SystemMode.READY:   #T1.3                                    
                     self.Ready()
                     break
-                if self.mMode == SystemMode.BARCODE:
+                if self.mMode == SystemMode.BARCODE: #T1.4
                     self.Barcode()   
                     break
-                if self.mMode == SystemMode.IRIS:
+                if self.mMode == SystemMode.IRIS: #T1.5
                     self.Iris()
                     break
-                if self.mMode == SystemMode.BUSSY:
+                if self.mMode == SystemMode.BUSSY: #T1.6
                     self.Bussy()
                     break
-                if self.mMode == SystemMode.RESET:
-                    print("RESET")
+                if self.mMode == SystemMode.RESET: #T1.7
+                    print("RESET") #s1.8
                     self.IDLE()                 
                     break
                 print("default", self.mMode)

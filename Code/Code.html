@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html lang="tr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+
+    <script type="text/javascript">
+        function loadHeader() {
+            var header = document.getElementById("HeaderContent");
+            header.innerHTML = '<iframe frameborder="no" width= "100% " height= "250" scrolling= "no" src= "../header/header.html" ></iframe > '
+        }
+    </script>
+</head>
+<body onload="loadHeader()">
+    <div id="HeaderContent"></div>
+    <div id="container">
+        <h2>Implementation</h2>
+        <br>
+        <br>
+        <ol>
+            <li><a href="ApiClient.py">ApiClient.py</a></li>
+            <li><a href="BarcodeControl.py">BarcodeControl.py</a></li>
+            <li><a href="ButtonControl.py">ButtonControl.py</a></li>
+            <li><a href="CameraControl.py">CameraControl.py</a></li>
+            <li><a href="ClientControlSystem.py">CCS.py</a></li>
+            <li><a href="DisplayControl.py">DisplayControl.py</a></li>
+            <li><a href="IrisControl.py">IrisControl.py</a></li>
+        </ol>
+        <br>
+        <ol>
+            <li><a href="IRServer/IrisDetectionSystem.py">IDS.py</a></li>
+            <li><a href="IRServer/label_image.py">LabelImage.py</a></li>
+        </ol>
+    </div>
+</body>
+</html>

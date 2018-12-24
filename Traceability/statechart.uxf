@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.3.0">
-  <zoom_level>8</zoom_level>
+  <zoom_level>13</zoom_level>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>40</x>
-      <y>96</y>
-      <w>128</w>
-      <h>96</h>
+      <x>130</x>
+      <y>351</y>
+      <w>208</w>
+      <h>156</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -15,10 +15,10 @@
   <element>
     <id>Text</id>
     <coordinates>
-      <x>72</x>
-      <y>112</y>
-      <w>88</w>
-      <h>16</h>
+      <x>182</x>
+      <y>377</y>
+      <w>143</w>
+      <h>26</h>
     </coordinates>
     <panel_attributes>S1.1-IDLE</panel_attributes>
     <additional_attributes/>
@@ -26,10 +26,10 @@
   <element>
     <type>com.baselet.element.old.element.InitialState</type>
     <coordinates>
-      <x>56</x>
-      <y>32</y>
-      <w>16</w>
-      <h>16</h>
+      <x>156</x>
+      <y>247</y>
+      <w>26</w>
+      <h>26</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -37,21 +37,21 @@
   <element>
     <type>com.baselet.element.old.element.Relation</type>
     <coordinates>
-      <x>40</x>
-      <y>16</y>
-      <w>80</w>
-      <h>96</h>
+      <x>130</x>
+      <y>221</y>
+      <w>130</w>
+      <h>156</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>64;80;64;24;24;24</additional_attributes>
+    <additional_attributes>104;130;104;39;39;39</additional_attributes>
   </element>
   <element>
     <id>Text</id>
     <coordinates>
-      <x>136</x>
+      <x>195</x>
       <y>0</y>
-      <w>96</w>
-      <h>16</h>
+      <w>156</w>
+      <h>26</h>
     </coordinates>
     <panel_attributes>ButtonControl
 </panel_attributes>
@@ -60,10 +60,10 @@
   <element>
     <id>Text</id>
     <coordinates>
-      <x>56</x>
-      <y>160</y>
-      <w>104</w>
-      <h>24</h>
+      <x>156</x>
+      <y>455</y>
+      <w>169</w>
+      <h>39</h>
     </coordinates>
     <panel_attributes>Set Button True
 </panel_attributes>
@@ -72,43 +72,48 @@
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>224</x>
-      <y>96</y>
-      <w>128</w>
-      <h>112</h>
+      <x>429</x>
+      <y>130</y>
+      <w>845</w>
+      <h>546</h>
     </coordinates>
-    <panel_attributes/>
+    <panel_attributes>fg=black
+bg=cyan
+
+
+
+layer=-1</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <type>com.baselet.element.old.element.Relation</type>
     <coordinates>
-      <x>144</x>
-      <y>96</y>
-      <w>88</w>
-      <h>32</h>
+      <x>299</x>
+      <y>351</y>
+      <w>156</w>
+      <h>65</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>80;24;24;24</additional_attributes>
+    <additional_attributes>130;39;39;39</additional_attributes>
   </element>
   <element>
     <type>com.baselet.element.old.element.Relation</type>
     <coordinates>
-      <x>88</x>
-      <y>168</y>
-      <w>216</w>
-      <h>104</h>
+      <x>208</x>
+      <y>468</y>
+      <w>338</w>
+      <h>234</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>24;24;24;88;200;88;200;40</additional_attributes>
+    <additional_attributes>39;39;39;221;325;221;325;208</additional_attributes>
   </element>
   <element>
     <id>Text</id>
     <coordinates>
-      <x>176</x>
-      <y>96</y>
-      <w>104</w>
-      <h>24</h>
+      <x>351</x>
+      <y>351</y>
+      <w>91</w>
+      <h>39</h>
     </coordinates>
     <panel_attributes>T1.1
 </panel_attributes>
@@ -117,10 +122,10 @@
   <element>
     <id>Text</id>
     <coordinates>
-      <x>176</x>
-      <y>232</y>
-      <w>32</w>
-      <h>24</h>
+      <x>351</x>
+      <y>598</y>
+      <w>52</w>
+      <h>39</h>
     </coordinates>
     <panel_attributes>T1.2
 </panel_attributes>
@@ -129,34 +134,23 @@
   <element>
     <id>Text</id>
     <coordinates>
-      <x>256</x>
-      <y>120</y>
-      <w>56</w>
-      <h>16</h>
+      <x>806</x>
+      <y>143</y>
+      <w>91</w>
+      <h>26</h>
     </coordinates>
-    <panel_attributes>S1.2-CCS</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Text</id>
-    <coordinates>
-      <x>240</x>
-      <y>152</y>
-      <w>104</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>Set mButton true
-Set Button false
+    <panel_attributes>S1.2-CCS
+fg=black
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>408</x>
-      <y>112</y>
-      <w>128</w>
-      <h>64</h>
+      <x>1391</x>
+      <y>754</y>
+      <w>208</w>
+      <h>104</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -164,10 +158,10 @@ Set Button false
   <element>
     <id>Text</id>
     <coordinates>
-      <x>536</x>
-      <y>32</y>
-      <w>112</w>
-      <h>16</h>
+      <x>1508</x>
+      <y>481</y>
+      <w>182</w>
+      <h>26</h>
     </coordinates>
     <panel_attributes>CameraControl</panel_attributes>
     <additional_attributes/>
@@ -175,10 +169,10 @@ Set Button false
   <element>
     <id>Text</id>
     <coordinates>
-      <x>424</x>
-      <y>152</y>
-      <w>104</w>
-      <h>24</h>
+      <x>1417</x>
+      <y>819</y>
+      <w>169</w>
+      <h>39</h>
     </coordinates>
     <panel_attributes>Set Camera true
 </panel_attributes>
@@ -187,32 +181,34 @@ Set Button false
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>616</x>
-      <y>96</y>
-      <w>128</w>
-      <h>80</h>
+      <x>1729</x>
+      <y>585</y>
+      <w>390</w>
+      <h>429</h>
     </coordinates>
-    <panel_attributes/>
+    <panel_attributes>
+bg=cyan
+layer=-1</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <type>com.baselet.element.old.element.Relation</type>
     <coordinates>
-      <x>512</x>
-      <y>112</y>
-      <w>112</w>
-      <h>32</h>
+      <x>1560</x>
+      <y>754</y>
+      <w>182</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>104;24;24;24</additional_attributes>
+    <additional_attributes>169;39;39;39</additional_attributes>
   </element>
   <element>
     <id>Text</id>
     <coordinates>
-      <x>648</x>
-      <y>104</y>
-      <w>88</w>
-      <h>16</h>
+      <x>1781</x>
+      <y>598</y>
+      <w>143</w>
+      <h>39</h>
     </coordinates>
     <panel_attributes>S2.2-CCS</panel_attributes>
     <additional_attributes/>
@@ -220,32 +216,10 @@ Set Button false
   <element>
     <id>Text</id>
     <coordinates>
-      <x>432</x>
-      <y>200</y>
-      <w>88</w>
-      <h>16</h>
-    </coordinates>
-    <panel_attributes>S2.3-TakeImage</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <type>com.baselet.element.old.element.Relation</type>
-    <coordinates>
-      <x>512</x>
-      <y>152</y>
-      <w>192</w>
-      <h>112</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>24;96;176;96;176;24</additional_attributes>
-  </element>
-  <element>
-    <id>Text</id>
-    <coordinates>
-      <x>440</x>
-      <y>120</y>
-      <w>64</w>
-      <h>16</h>
+      <x>1443</x>
+      <y>767</y>
+      <w>104</w>
+      <h>26</h>
     </coordinates>
     <panel_attributes>S2.1-Idle</panel_attributes>
     <additional_attributes/>
@@ -253,54 +227,32 @@ Set Button false
   <element>
     <type>com.baselet.element.old.element.Relation</type>
     <coordinates>
-      <x>400</x>
-      <y>64</y>
-      <w>88</w>
-      <h>64</h>
+      <x>1378</x>
+      <y>676</y>
+      <w>130</w>
+      <h>91</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>72;48;72;24;24;24</additional_attributes>
+    <additional_attributes>117;78;117;39;39;39</additional_attributes>
   </element>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>416</x>
-      <y>80</y>
-      <w>16</w>
-      <h>16</h>
+      <x>1404</x>
+      <y>702</y>
+      <w>26</w>
+      <h>26</h>
     </coordinates>
     <panel_attributes>type=initial</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
-    <id>UMLState</id>
-    <coordinates>
-      <x>408</x>
-      <y>192</y>
-      <w>128</w>
-      <h>80</h>
-    </coordinates>
-    <panel_attributes/>
-    <additional_attributes/>
-  </element>
-  <element>
-    <type>com.baselet.element.old.element.Relation</type>
-    <coordinates>
-      <x>512</x>
-      <y>152</y>
-      <w>168</w>
-      <h>88</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>152;24;152;72;24;72</additional_attributes>
-  </element>
-  <element>
     <id>Text</id>
     <coordinates>
-      <x>552</x>
-      <y>112</y>
-      <w>40</w>
-      <h>24</h>
+      <x>1625</x>
+      <y>754</y>
+      <w>65</w>
+      <h>39</h>
     </coordinates>
     <panel_attributes>T2.1
 </panel_attributes>
@@ -309,10 +261,10 @@ Set Button false
   <element>
     <id>Text</id>
     <coordinates>
-      <x>568</x>
-      <y>200</y>
-      <w>40</w>
-      <h>24</h>
+      <x>2002</x>
+      <y>897</y>
+      <w>65</w>
+      <h>39</h>
     </coordinates>
     <panel_attributes>T2.3
 </panel_attributes>
@@ -321,10 +273,10 @@ Set Button false
   <element>
     <id>Text</id>
     <coordinates>
-      <x>568</x>
-      <y>232</y>
-      <w>40</w>
-      <h>24</h>
+      <x>1885</x>
+      <y>793</y>
+      <w>65</w>
+      <h>39</h>
     </coordinates>
     <panel_attributes>T2.2
 </panel_attributes>
@@ -333,21 +285,23 @@ Set Button false
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>48</x>
-      <y>400</y>
-      <w>128</w>
-      <h>64</h>
+      <x>806</x>
+      <y>1222</y>
+      <w>208</w>
+      <h>104</h>
     </coordinates>
-    <panel_attributes/>
+    <panel_attributes>
+bg=white
+layer=1</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Text</id>
     <coordinates>
-      <x>168</x>
-      <y>312</y>
-      <w>88</w>
-      <h>16</h>
+      <x>1001</x>
+      <y>962</y>
+      <w>143</w>
+      <h>26</h>
     </coordinates>
     <panel_attributes>DisplayControl</panel_attributes>
     <additional_attributes/>
@@ -355,22 +309,23 @@ Set Button false
   <element>
     <id>Text</id>
     <coordinates>
-      <x>64</x>
-      <y>440</y>
-      <w>104</w>
-      <h>24</h>
+      <x>832</x>
+      <y>1287</y>
+      <w>169</w>
+      <h>39</h>
     </coordinates>
     <panel_attributes>Set Display true
-</panel_attributes>
+
+layer=2</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>256</x>
-      <y>384</y>
-      <w>128</w>
-      <h>80</h>
+      <x>1144</x>
+      <y>1196</y>
+      <w>208</w>
+      <h>130</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -378,98 +333,94 @@ Set Button false
   <element>
     <type>com.baselet.element.old.element.Relation</type>
     <coordinates>
-      <x>152</x>
-      <y>400</y>
-      <w>120</w>
-      <h>40</h>
+      <x>1001</x>
+      <y>1222</y>
+      <w>168</w>
+      <h>64</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>104;24;24;24</additional_attributes>
+    <additional_attributes>143;39;39;39</additional_attributes>
   </element>
   <element>
     <id>Text</id>
     <coordinates>
-      <x>288</x>
-      <y>400</y>
-      <w>64</w>
-      <h>16</h>
+      <x>1196</x>
+      <y>1222</y>
+      <w>104</w>
+      <h>26</h>
     </coordinates>
     <panel_attributes>S3.2-CCS</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1001</x>
+      <y>1287</y>
+      <w>285</w>
+      <h>181</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>39;156;260;156;260;39</additional_attributes>
+  </element>
+  <element>
     <id>Text</id>
     <coordinates>
-      <x>80</x>
-      <y>496</y>
-      <w>88</w>
-      <h>16</h>
+      <x>858</x>
+      <y>1235</y>
+      <w>104</w>
+      <h>26</h>
     </coordinates>
-    <panel_attributes>S3.3-Show</panel_attributes>
+    <panel_attributes>S3.1-Idle
+layer=2</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <type>com.baselet.element.old.element.Relation</type>
     <coordinates>
-      <x>152</x>
-      <y>440</y>
-      <w>192</w>
-      <h>112</h>
+      <x>806</x>
+      <y>1131</y>
+      <w>142</w>
+      <h>116</h>
     </coordinates>
-    <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>24;96;176;96;176;24</additional_attributes>
-  </element>
-  <element>
-    <id>Text</id>
-    <coordinates>
-      <x>80</x>
-      <y>408</y>
-      <w>64</w>
-      <h>16</h>
-    </coordinates>
-    <panel_attributes>S3.1-Idle</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <type>com.baselet.element.old.element.Relation</type>
-    <coordinates>
-      <x>48</x>
-      <y>344</y>
-      <w>88</w>
-      <h>72</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>72;56;72;24;24;24</additional_attributes>
+    <panel_attributes>lt=&lt;-
+layer=2</panel_attributes>
+    <additional_attributes>117;91;117;39;39;39</additional_attributes>
   </element>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>56</x>
-      <y>360</y>
-      <w>16</w>
-      <h>16</h>
+      <x>819</x>
+      <y>1157</y>
+      <w>26</w>
+      <h>26</h>
     </coordinates>
-    <panel_attributes>type=initial</panel_attributes>
+    <panel_attributes>type=initial
+layer=1</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>48</x>
-      <y>480</y>
-      <w>128</w>
-      <h>80</h>
+      <x>806</x>
+      <y>1352</y>
+      <w>208</w>
+      <h>130</h>
     </coordinates>
-    <panel_attributes/>
+    <panel_attributes>S3.3 Show
+
+Set Display false
+bg=white
+layer=1</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Text</id>
     <coordinates>
-      <x>192</x>
-      <y>400</y>
-      <w>40</w>
-      <h>24</h>
+      <x>1040</x>
+      <y>1222</y>
+      <w>65</w>
+      <h>39</h>
     </coordinates>
     <panel_attributes>T3.1
 </panel_attributes>
@@ -478,10 +429,10 @@ Set Button false
   <element>
     <id>Text</id>
     <coordinates>
-      <x>216</x>
-      <y>512</y>
-      <w>40</w>
-      <h>24</h>
+      <x>1079</x>
+      <y>1404</y>
+      <w>65</w>
+      <h>39</h>
     </coordinates>
     <panel_attributes>T3.2
 </panel_attributes>
@@ -490,33 +441,10 @@ Set Button false
   <element>
     <id>Text</id>
     <coordinates>
-      <x>632</x>
-      <y>144</y>
-      <w>96</w>
-      <h>32</h>
-    </coordinates>
-    <panel_attributes>set mCamera true
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Text</id>
-    <coordinates>
-      <x>432</x>
-      <y>240</y>
-      <w>96</w>
-      <h>24</h>
-    </coordinates>
-    <panel_attributes>Set Camera true</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Text</id>
-    <coordinates>
-      <x>280</x>
-      <y>432</y>
-      <w>96</w>
-      <h>24</h>
+      <x>1183</x>
+      <y>1274</y>
+      <w>156</w>
+      <h>39</h>
     </coordinates>
     <panel_attributes>Set mShow true
 </panel_attributes>
@@ -525,45 +453,35 @@ Set Button false
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>0</x>
-      <y>416</y>
-      <w>64</w>
-      <h>120</h>
+      <x>728</x>
+      <y>1248</y>
+      <w>104</w>
+      <h>195</h>
     </coordinates>
-    <panel_attributes>lt=-&gt;</panel_attributes>
+    <panel_attributes>lt=-&gt;
+layer=2</panel_attributes>
     <additional_attributes>60.0;130.0;10.0;130.0;10.0;10.0;60.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Text</id>
     <coordinates>
-      <x>8</x>
-      <y>464</y>
-      <w>40</w>
-      <h>24</h>
+      <x>741</x>
+      <y>1326</y>
+      <w>65</w>
+      <h>39</h>
     </coordinates>
     <panel_attributes>T3.3
-</panel_attributes>
+
+layer=1</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Text</id>
     <coordinates>
-      <x>64</x>
-      <y>528</y>
-      <w>104</w>
-      <h>24</h>
-    </coordinates>
-    <panel_attributes>Set Display false
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Text</id>
-    <coordinates>
-      <x>648</x>
-      <y>304</y>
-      <w>88</w>
-      <h>16</h>
+      <x>1781</x>
+      <y>1066</y>
+      <w>143</w>
+      <h>26</h>
     </coordinates>
     <panel_attributes>BarcodeControl</panel_attributes>
     <additional_attributes/>
@@ -571,10 +489,10 @@ Set Button false
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>736</x>
-      <y>400</y>
-      <w>128</w>
-      <h>80</h>
+      <x>1924</x>
+      <y>1222</y>
+      <w>208</w>
+      <h>130</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -582,21 +500,21 @@ Set Button false
   <element>
     <type>com.baselet.element.old.element.Relation</type>
     <coordinates>
-      <x>632</x>
-      <y>416</y>
-      <w>120</w>
-      <h>40</h>
+      <x>1755</x>
+      <y>1248</y>
+      <w>182</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>104;24;24;24</additional_attributes>
+    <additional_attributes>169;39;39;39</additional_attributes>
   </element>
   <element>
     <id>Text</id>
     <coordinates>
-      <x>768</x>
-      <y>408</y>
-      <w>64</w>
-      <h>16</h>
+      <x>1976</x>
+      <y>1235</y>
+      <w>104</w>
+      <h>26</h>
     </coordinates>
     <panel_attributes>S4.1-CCS</panel_attributes>
     <additional_attributes/>
@@ -604,10 +522,10 @@ Set Button false
   <element>
     <id>Text</id>
     <coordinates>
-      <x>536</x>
-      <y>408</y>
-      <w>112</w>
-      <h>16</h>
+      <x>1599</x>
+      <y>1235</y>
+      <w>182</w>
+      <h>26</h>
     </coordinates>
     <panel_attributes>S4.2-Barcode Check</panel_attributes>
     <additional_attributes/>
@@ -615,21 +533,21 @@ Set Button false
   <element>
     <type>com.baselet.element.old.element.Relation</type>
     <coordinates>
-      <x>568</x>
-      <y>448</y>
-      <w>256</w>
-      <h>112</h>
+      <x>1651</x>
+      <y>1300</y>
+      <w>403</w>
+      <h>169</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>24;24;24;96;240;96;240;32</additional_attributes>
+    <additional_attributes>39;39;39;156;390;156;390;52</additional_attributes>
   </element>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>528</x>
-      <y>392</y>
-      <w>128</w>
-      <h>80</h>
+      <x>1586</x>
+      <y>1209</y>
+      <w>208</w>
+      <h>130</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -637,10 +555,10 @@ Set Button false
   <element>
     <id>Text</id>
     <coordinates>
-      <x>672</x>
-      <y>416</y>
-      <w>40</w>
-      <h>24</h>
+      <x>1820</x>
+      <y>1248</y>
+      <w>65</w>
+      <h>39</h>
     </coordinates>
     <panel_attributes>T4.2
 </panel_attributes>
@@ -649,10 +567,10 @@ Set Button false
   <element>
     <id>Text</id>
     <coordinates>
-      <x>696</x>
-      <y>528</y>
-      <w>40</w>
-      <h>24</h>
+      <x>1859</x>
+      <y>1430</y>
+      <w>65</w>
+      <h>39</h>
     </coordinates>
     <panel_attributes>T4.1
 </panel_attributes>
@@ -661,10 +579,10 @@ Set Button false
   <element>
     <id>Text</id>
     <coordinates>
-      <x>752</x>
-      <y>448</y>
-      <w>96</w>
-      <h>32</h>
+      <x>1950</x>
+      <y>1300</y>
+      <w>156</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>mCheckBarcode
 </panel_attributes>
@@ -673,21 +591,21 @@ Set Button false
   <element>
     <type>com.baselet.element.old.element.Relation</type>
     <coordinates>
-      <x>736</x>
-      <y>344</y>
-      <w>88</w>
-      <h>72</h>
+      <x>1937</x>
+      <y>1131</y>
+      <w>117</w>
+      <h>104</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>72;56;72;24;24;24</additional_attributes>
+    <additional_attributes>104;91;104;39;39;39</additional_attributes>
   </element>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>744</x>
-      <y>360</y>
-      <w>16</w>
-      <h>16</h>
+      <x>1937</x>
+      <y>1157</y>
+      <w>26</w>
+      <h>26</h>
     </coordinates>
     <panel_attributes>type=initial</panel_attributes>
     <additional_attributes/>
@@ -695,10 +613,10 @@ Set Button false
   <element>
     <id>Text</id>
     <coordinates>
-      <x>672</x>
-      <y>632</y>
-      <w>88</w>
-      <h>16</h>
+      <x>1820</x>
+      <y>1599</y>
+      <w>143</w>
+      <h>26</h>
     </coordinates>
     <panel_attributes>IrisControl</panel_attributes>
     <additional_attributes/>
@@ -706,10 +624,10 @@ Set Button false
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>760</x>
-      <y>720</y>
-      <w>128</w>
-      <h>80</h>
+      <x>1963</x>
+      <y>1742</y>
+      <w>208</w>
+      <h>130</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -717,21 +635,21 @@ Set Button false
   <element>
     <type>com.baselet.element.old.element.Relation</type>
     <coordinates>
-      <x>656</x>
-      <y>736</y>
-      <w>120</w>
-      <h>40</h>
+      <x>1794</x>
+      <y>1768</y>
+      <w>182</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>104;24;24;24</additional_attributes>
+    <additional_attributes>169;39;39;39</additional_attributes>
   </element>
   <element>
     <id>Text</id>
     <coordinates>
-      <x>792</x>
-      <y>728</y>
-      <w>64</w>
-      <h>16</h>
+      <x>2015</x>
+      <y>1755</y>
+      <w>104</w>
+      <h>26</h>
     </coordinates>
     <panel_attributes>S5.1-CCS</panel_attributes>
     <additional_attributes/>
@@ -739,10 +657,10 @@ Set Button false
   <element>
     <id>Text</id>
     <coordinates>
-      <x>560</x>
-      <y>728</y>
-      <w>112</w>
-      <h>16</h>
+      <x>1638</x>
+      <y>1755</y>
+      <w>182</w>
+      <h>26</h>
     </coordinates>
     <panel_attributes>S5.2-Iris Check</panel_attributes>
     <additional_attributes/>
@@ -750,21 +668,21 @@ Set Button false
   <element>
     <type>com.baselet.element.old.element.Relation</type>
     <coordinates>
-      <x>592</x>
-      <y>768</y>
-      <w>256</w>
-      <h>112</h>
+      <x>1690</x>
+      <y>1820</y>
+      <w>403</w>
+      <h>169</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>24;24;24;96;240;96;240;32</additional_attributes>
+    <additional_attributes>39;39;39;156;390;156;390;52</additional_attributes>
   </element>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>552</x>
-      <y>712</y>
-      <w>128</w>
-      <h>80</h>
+      <x>1625</x>
+      <y>1729</y>
+      <w>208</w>
+      <h>130</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -772,10 +690,10 @@ Set Button false
   <element>
     <id>Text</id>
     <coordinates>
-      <x>696</x>
-      <y>736</y>
-      <w>40</w>
-      <h>24</h>
+      <x>1859</x>
+      <y>1768</y>
+      <w>65</w>
+      <h>39</h>
     </coordinates>
     <panel_attributes>T5.2
 </panel_attributes>
@@ -784,10 +702,10 @@ Set Button false
   <element>
     <id>Text</id>
     <coordinates>
-      <x>720</x>
-      <y>848</y>
-      <w>40</w>
-      <h>24</h>
+      <x>1898</x>
+      <y>1950</y>
+      <w>65</w>
+      <h>39</h>
     </coordinates>
     <panel_attributes>T5.1
 </panel_attributes>
@@ -796,10 +714,10 @@ Set Button false
   <element>
     <id>Text</id>
     <coordinates>
-      <x>776</x>
-      <y>768</y>
-      <w>96</w>
-      <h>32</h>
+      <x>1989</x>
+      <y>1820</y>
+      <w>156</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>mCheckIris
 </panel_attributes>
@@ -808,23 +726,465 @@ Set Button false
   <element>
     <type>com.baselet.element.old.element.Relation</type>
     <coordinates>
-      <x>760</x>
-      <y>664</y>
-      <w>88</w>
-      <h>72</h>
+      <x>1963</x>
+      <y>1651</y>
+      <w>130</w>
+      <h>104</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>72;56;72;24;24;24</additional_attributes>
+    <additional_attributes>117;91;117;39;39;39</additional_attributes>
   </element>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>768</x>
-      <y>680</y>
-      <w>16</w>
-      <h>16</h>
+      <x>1976</x>
+      <y>1677</y>
+      <w>26</w>
+      <h>26</h>
     </coordinates>
     <panel_attributes>type=initial</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.InitialState</type>
+    <coordinates>
+      <x>858</x>
+      <y>260</y>
+      <w>26</w>
+      <h>26</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>793</x>
+      <y>325</y>
+      <w>182</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>State 1.3 - IDLE
+
+DO:
+Set mButton True
+
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>1001</x>
+      <y>442</y>
+      <w>208</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>State 1.5 - Barcode
+DO:
+Set mTakeImage True
+Set mButton True
+mMode = IRIS
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>936</x>
+      <y>364</y>
+      <w>169</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>156;78;156;39;39;39</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>988</x>
+      <y>195</y>
+      <w>221</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>State 1.4 - Ready
+DO:
+Set mShowCamera
+Set mButton True
+mMode = BARCODE
+
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>962</x>
+      <y>312</y>
+      <w>143</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>10.0;50.0;90.0;50.0;90.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>546</x>
+      <y>455</y>
+      <w>208</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>State 1.6 - Iris
+DO:
+Set mTakeImage True
+Set mButton True
+set CheckIris
+mMode = BUSSY
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>546</x>
+      <y>312</y>
+      <w>208</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>State 1.7 - BUSSY
+DO:
+Set mSendData True
+mMode = RESET
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>845</x>
+      <y>624</y>
+      <w>26</w>
+      <h>26</h>
+    </coordinates>
+    <panel_attributes>type=final</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>546</x>
+      <y>208</y>
+      <w>208</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>State 1.8 - RESET
+DO:
+mMode = READY
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>741</x>
+      <y>364</y>
+      <w>78</w>
+      <h>39</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>40.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>741</x>
+      <y>429</y>
+      <w>156</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>100.0;10.0;100.0;60.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>858</x>
+      <y>260</y>
+      <w>39</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>741</x>
+      <y>234</y>
+      <w>117</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>70.0;70.0;70.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>481</x>
+      <y>221</y>
+      <w>390</w>
+      <h>442</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;10.0;10.0;320.0;280.0;320.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>481</x>
+      <y>351</y>
+      <w>91</w>
+      <h>39</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>481</x>
+      <y>494</y>
+      <w>91</w>
+      <h>39</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>858</x>
+      <y>247</y>
+      <w>416</w>
+      <h>416</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>270.0;10.0;300.0;10.0;300.0;300.0;10.0;300.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1196</x>
+      <y>494</y>
+      <w>78</w>
+      <h>39</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;40.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>975</x>
+      <y>403</y>
+      <w>91</w>
+      <h>39</h>
+    </coordinates>
+    <panel_attributes>T1.4
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>975</x>
+      <y>338</y>
+      <w>91</w>
+      <h>39</h>
+    </coordinates>
+    <panel_attributes>T1.3
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>793</x>
+      <y>507</y>
+      <w>91</w>
+      <h>39</h>
+    </coordinates>
+    <panel_attributes>T1.5
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>754</x>
+      <y>312</y>
+      <w>91</w>
+      <h>39</h>
+    </coordinates>
+    <panel_attributes>T1.6
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>780</x>
+      <y>208</y>
+      <w>91</w>
+      <h>39</h>
+    </coordinates>
+    <panel_attributes>T1.7
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>754</x>
+      <y>598</y>
+      <w>91</w>
+      <h>39</h>
+    </coordinates>
+    <panel_attributes>T1.8
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>910</x>
+      <y>598</y>
+      <w>91</w>
+      <h>39</h>
+    </coordinates>
+    <panel_attributes>T1.8
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>1781</x>
+      <y>663</y>
+      <w>221</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>State 2.3 - IDLE
+DO:
+Set mShowCamera
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>1781</x>
+      <y>845</y>
+      <w>221</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>State 2.4 - TakeImage
+DO:
+Set mShowCamera
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1872</x>
+      <y>767</y>
+      <w>39</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1989</x>
+      <y>884</y>
+      <w>104</w>
+      <h>39</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;60.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>2067</x>
+      <y>884</y>
+      <w>26</w>
+      <h>26</h>
+    </coordinates>
+    <panel_attributes>type=final</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1898</x>
+      <y>585</y>
+      <w>91</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>39;78;39;39;78;39</additional_attributes>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>1963</x>
+      <y>611</y>
+      <w>26</w>
+      <h>26</h>
+    </coordinates>
+    <panel_attributes>type=initial</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>715</x>
+      <y>1144</y>
+      <w>325</w>
+      <h>403</h>
+    </coordinates>
+    <panel_attributes>
+bg=cyan
+layer=-1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>780</x>
+      <y>1053</y>
+      <w>142</w>
+      <h>116</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+layer=2</panel_attributes>
+    <additional_attributes>117;91;117;39;39;39</additional_attributes>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>793</x>
+      <y>1079</y>
+      <w>26</w>
+      <h>26</h>
+    </coordinates>
+    <panel_attributes>type=initial
+layer=1</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

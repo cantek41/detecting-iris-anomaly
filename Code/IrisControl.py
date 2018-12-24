@@ -5,7 +5,7 @@ EYES_CASCADE = 'eyecascade.xml'
 
 class IrisControl:
 
-    def CheckIris(self,img):
+    def CheckIris(self,img): #S5.2
         resim=cv2.imread(img)
         yuztani = cv2.CascadeClassifier(EYES_CASCADE)
         griton=cv2.cvtColor(resim,cv2.COLOR_BGR2GRAY)
