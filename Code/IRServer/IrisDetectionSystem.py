@@ -3,14 +3,25 @@ from flask import  request, redirect, url_for, jsonify
 import os
 import label_image
 
+import hashlib
 
 app = Flask(__name__)
-@app.route('/hello')
-def hello():
-    res="0"#label_image.classify("44.jpg")
-    return res
+list=[]
+@app.route('/login')
+def login():
+    hash_object=hashlib.md5(request.remote_addr.encode("utf-8"))
+    id=hash_object.hexdigest()
+    if id not in list:
+        list.append(id)
+    return id
+
+    
 @app.route('/takeImage', methods=['POST'])
 def takeImage():
+    hash_object=haslib.md5(request.remote_addr.encode("utf-8"))
+    id=hash_object.hexdigest()
+    if id not in list:
+        return redirect(request.url),404
     if request.method == 'POST':
         # check if the post request has the file part
         print("dfed")
