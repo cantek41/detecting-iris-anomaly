@@ -1,5 +1,5 @@
 from flask import Flask
-from flask import  request, redirect, url_for
+from flask import  request, redirect, url_for, jsonify
 import os
 import label_image
 
@@ -28,7 +28,7 @@ def upload_file():
             return redirect(request.url)
         file.save(os.path.join("", file.filename))
         res=label_image.classify(file.filename)
-    return res
+    return jsonify(res)
 
 if __name__ == "__main__":    
     app.run("192.168.0.34")
