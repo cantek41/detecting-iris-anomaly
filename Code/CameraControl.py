@@ -7,7 +7,7 @@ class CameraControl():
         self.vs=None
     
     
-    def getCamera(self):
+    def mCamera(self):
         if not self.vs:
             self.vs=VideoStream(usePiCamera = 1).start()
             time.sleep(1.0)

@@ -1,7 +1,7 @@
 import requests
 import json
 
-url="http://192.168.0.34:5000/upload_file"
+url="http://192.168.0.34:5000/takeImage"
 
 def sendFile(file):
     files = {'file': open(file, 'rb')}

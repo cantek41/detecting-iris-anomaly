@@ -1,19 +1,17 @@
-#ButtonControl
 import RPi.GPIO as GPIO
 import time
 import threading
 
 class ButtonControl:
 
-    def __init__(self,ccs):
-        self.ccs = ccs
+    def __init__(self):
         GPIO.setmode(GPIO.BOARD)
         GPIO.setwarnings(False)
         GPIO.setup(16, GPIO.IN, pull_up_down = GPIO.PUD_UP)
         self.stopEvent = threading.Event()
-        #self.stopEvent.set()
-        self.event=threading.Thread(target = self.buttonListener, args = ())        
-        self.event.start()     
+        self.event=None       
+        #self.event=threading.Thread(target = self.mButton, args = ())        
+        #self.event.start()     
 
     def onClose(self):
         print("ButtonControl Ending...")
@@ -23,11 +21,11 @@ class ButtonControl:
     def run(self):                        
         self.stopEvent.clear()
         if not self.event.is_alive():
-            self.event=threading.Thread(target = self.buttonListener, args = ())
+            self.event=threading.Thread(target = self.mButton, args = ())
             self.event.start()
        
 
-    def buttonListener(self):
+    def mButton(self):
         while not self.stopEvent.is_set():
             btnRead = GPIO.input(16)
             #print("Btn Bası")

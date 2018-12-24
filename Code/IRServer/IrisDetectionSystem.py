@@ -9,8 +9,8 @@ app = Flask(__name__)
 def hello():
     res="0"#label_image.classify("44.jpg")
     return res
-@app.route('/upload_file', methods=['POST'])
-def upload_file():
+@app.route('/takeImage', methods=['POST'])
+def takeImage():
     if request.method == 'POST':
         # check if the post request has the file part
         print("dfed")

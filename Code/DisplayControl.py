@@ -36,7 +36,7 @@ class DisplayControl():
         self.text.set(msg)
         print(msg)
 
-    def runCamera(self,vs):
+    def runVideo(self,vs):
         self.vs=vs
         self.event=threading.Thread(target = self.showCamera, args = ())
         self.event.start()
