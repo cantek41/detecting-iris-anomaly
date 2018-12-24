@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><diagram program="umlet" version="13.3">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
   <zoom_level>12</zoom_level>
   <element>
     <id>UMLClass</id>
@@ -91,7 +92,7 @@ fg=blue
       <h>72</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-
-true
+
 
 </panel_attributes>
     <additional_attributes>10.0;20.0;220.0;20.0</additional_attributes>

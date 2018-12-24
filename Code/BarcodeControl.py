@@ -5,7 +5,7 @@ class BarcodeControl:
 
     def CheckBarcode(self,img):
         try:
-            data= decode(Image.open(img))
+            data= decode(Image.open("image/"+img))
             return data[0].data
         except:
             return None

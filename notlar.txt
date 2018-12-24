@@ -1,0 +1,15 @@
+--- usecaslerde ki USECASE' altýndaki not kýrmýzý yapýlacak
+
+--- Cascade nedir
+
+--- GPIO nedir açýlýmý General Purpose Input Output ( Genel Amaçlý Giriþ Çýkýþ). 
+
+--- senaryo7B deki yi sil, senaryo 2a true -- data diye çevir
+
+--- class diagramlarý düzenle
+
+statechartlarý deðiþtir ve kodlamada yerlerini belirt
+
+birim tesleri ve kabul testini yap
+
+sunu hazýrla
