@@ -10,7 +10,7 @@ class ButtonControl:
         GPIO.setup(16, GPIO.IN, pull_up_down = GPIO.PUD_UP)
         self.stopEvent = threading.Event()
         self.event=None       
-        #self.event=threading.Thread(target = self.mButton, args = ())        
+        self.event=threading.Thread(target = self.mButton, args = ())        
         #self.event.start()     
 
     def onClose(self):
